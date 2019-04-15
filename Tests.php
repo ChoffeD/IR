@@ -22,7 +22,8 @@ background-repeat: repeat;
 </style>
 </head>
 <body>
-<form action="traitement.php" method="post">>
+<form action="traitement.php" method="post">
+    <input type="submit" name="valide" value=" Save " />
 	<?php 
 		$ligne = 1;
 		$indice  = 0 ;
@@ -100,7 +101,6 @@ if($ligne== 1 ){
    
    
    <?php } } } $ligne = 1 ;$indice++;  } ?>
-   <input type="submit" name="valide" value=" Save " />
 </table>
 
 </form>
