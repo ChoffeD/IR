@@ -22,23 +22,18 @@ background-repeat: repeat;
 </style>
 </head>
 <body>
-<form>
+<form action="traitement.php" method="post">>
 	<?php 
 		$ligne = 1;
 		$indice  = 0 ;
-		$transvox=array("IR/testFile/File1/pitch"=>"IR/testFile/File1/transvox/yapasdesoucismadame_synth_OLA_FFT_AVO.wav",
-		"IR/testFile/File2/pitch"=>"IR/testFile/File2/transvox/vincent_synth_OLA_FFT_AVO.wav",
-		"IR/testFile/File3/pitch"=>"IR/testFile/File3/transvox/PT_0500_synth_OLA_FFT_AVO.wav",
-		"IR/testFile/File4/pitch"=>"IR/testFile/File4/transvox/file4_synth_OLA_FFT_AVO.wav",
-		"IR/testFile/File5/pitch"=>"IR/testFile/File5/transvox/file5_synth_OLA_FFT_AVO.wav",		
-		);
-		$original=array("IR/testFile/File1/transvox/yapasdesoucismadame_synth_OLA_FFT_AVO.wav"=>"IR/testFile/File1/Original/yapasdesoucismadame.wav",
-		"IR/testFile/File2/transvox/vincent_synth_OLA_FFT_AVO.wav"=>"IR/testFile/File2/Original/vincent.wav",
-		"IR/testFile/File3/transvox/PT_0500_synth_OLA_FFT_AVO.wav"=>"IR/testFile/File3/Original/PT_0500.wav",
-		"IR/testFile/File4/transvox/file4_synth_OLA_FFT_AVO.wav"=>"IR/testFile/File4/Original/file4.wav",
-		"IR/testFile/File5/transvox/file5_synth_OLA_FFT_AVO.wav"=>"IR/testFile/File5/Original/file5.wav",		
-		);
-        $paths=array_keys($transvox); 
+		$transvox = array();
+		$originals = array();
+		for($i = 1; $i<=10; $i++) {
+            $transvox["IR/testFile/File".$i."/pitch"] = "IR/testFile/File".$i."/transvox/File".$i."transvox".".wav";
+            $originals["IR/testFile/File".$i."/transvox/File".$i."transvox".".wav"] = "IR/testFile/File".$i."/Original/File".$i.".wav";
+        }
+
+        $paths=array_keys($transvox);
         
 	?>
 
@@ -49,18 +44,17 @@ background-repeat: repeat;
 <th> <h1>Notation </h1></th>
 </tr>
 
- <?php foreach($original as $key=>$file) {
+ <?php foreach($originals as $key=>$file) {
 if($ligne== 1 ){
  ?>
 
     <tr> 	
-		<td> <h3> file Transvox </h3>  </td>   
+		<td> <h3> File Transvox </h3>  </td>
 		<td> 	<audio controls="controls">
 					<source src="<?php echo $file?>" type="audio/wav" />
 				</audio> 
 	   </td>
-	   <td> <input type="double" name ="<?php echo $file?>" value="1.00"  size ="4">
-	   <input type ="submit" value="valider" name ="submit" />
+	   <td> <input type="double" name ="<?php echo $file?>" value="0.00"  size ="4">
 	    </td>
 	
    </tr>
@@ -76,16 +70,14 @@ if($ligne== 1 ){
 	  </td>   
 		<td> 	
 	   </td>
-	   <td> <input type="double" name ="<?php echo $key?>" value="1.00"  size ="4"> </td>
+	   <td> <input type="double" name ="<?php echo $key?>" value="0.00"  size ="4"> </td>
 	
    </tr>
-   <tr> <td> <h3> Files : </h3> </td>
-   <td> <?php echo $indice; ?>  </td>
+   <tr> <td> <h3> Files : <?php echo $indice; ?></h3> </td>
    <td>  </td>
    </tr>
   
-   <?php }  $ligne++;  if ($ligne == 3 ) { 
-    
+   <?php }  $ligne++;  if ($ligne == 3 ) {
      $files = new DirectoryIterator($paths[$indice]);//repertoire du fichier à changer
            foreach($files as $son){ 
 		   	if($son->getFilename() != "." && $son->getFilename() != "..")
@@ -98,7 +90,8 @@ if($ligne== 1 ){
 					<source src="<?php echo $name ;?>" type="audio/wav" />
 				    </audio>	    </td>
 					<td></td>
-				    <td> <input type="double" name ="<?php echo $name?>" value="1.00" size ="4"> </td> 
+                     <?php ?>
+				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4"> </td>
 				 </tr>
    
   
