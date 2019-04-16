@@ -88,13 +88,12 @@ if($ligne== 1 ){
 				  <td>   <audio controls="controls">
 					<source src="<?php echo $name ;?>" type="audio/wav" />
 				    </audio>	    </td><td>
-                     <?php if($i%5 ==0) {
-                         echo
-                     ' 	<audio controls="controls">
+                     <?php if($i%5 ==0) {?>
+
+                      	<audio controls="controls">
                              <source src="<?php echo $file?>" type="audio/wav" />
                          </audio>
-                     ';}
-                     ?></td>
+                     <?php }?></td>
 				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4", pattern="([0-4](.[0-5])?)|5"> </td>
 				 </tr>
 
