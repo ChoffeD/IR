@@ -135,8 +135,6 @@ recevoir la clé USB.&nbsp;&nbsp;</span></font></font></font></p>
 
 </p>
 
-
-<body>
 <form action="traitement.php" method="post">
     <input type="submit" name="valide" value=" Save " />
 	<?php 
