@@ -75,9 +75,10 @@ if($ligne== 1 ){
    <td>  </td>
    </tr>
 
-   <?php }  $ligne++;  if ($ligne == 3 ) {
+   <?php } $i = -3; $ligne++;  if ($ligne == 3 ) {
      $files = new DirectoryIterator($paths[$indice]);//repertoire du fichier à changer
            foreach($files as $son){
+               $i++;
 		   	if($son->getFilename() != "." && $son->getFilename() != "..")
 			     { $path=$paths[$indice];
 				  $name= $path."/".$son->getFilename();
@@ -86,12 +87,14 @@ if($ligne== 1 ){
 				 <tr>
 				  <td>   <audio controls="controls">
 					<source src="<?php echo $name ;?>" type="audio/wav" />
-				    </audio>	    </td>
-                     <td> 	<audio controls="controls">
+				    </audio>	    </td><td>
+                     <?php if($i%5 ==0) {
+                         echo
+                     ' 	<audio controls="controls">
                              <source src="<?php echo $file?>" type="audio/wav" />
                          </audio>
-                     </td>
-                     <?php ?>
+                     ';}
+                     ?></td>
 				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4", pattern="([0-4](.[0-5])?)|5"> </td>
 				 </tr>
 
