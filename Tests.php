@@ -20,7 +20,6 @@ background-repeat: repeat;
 }
 
 </style>
-</head>
 
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -56,7 +55,7 @@ background-repeat: repeat;
 <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 115%">
 <span style="display: inline-block; border: none; padding: 0in"><font face="Times, serif"><font size="3" style="font-size: 12pt"><font color="#000000">-D’abord,
 vous devez écouter les fichiers audios de gauche (colonne
-«&nbsp;<i>Files&nbsp;</i>»)&nbsp;;&nbsp;</span></span></font></font></font></p>
+«&nbsp;<i>Files&nbsp;</i>»)&nbsp;;&nbsp;</span></font></font></font></p>
 <p style="text-indent: 0.49in; margin-bottom: 0in; line-height: 115%">
     -Ensuite, vous devez écouter le fichier audio original associé
     (colonne du milieu)&nbsp;;</p>
@@ -66,7 +65,7 @@ vous devez&nbsp;<u><b>attribuer une note</b></u>.&nbsp;La note doit
 être attribuée&nbsp;par rapport&nbsp;à&nbsp;la ressemblance entre
 le fichier de gauche et le fichier original. La notation se fait de&nbsp;<b>1
 à 5</b>&nbsp;(les notes décimales&nbsp;sont autorisées.&nbsp;<i>Par
-exemple&nbsp;:&nbsp;3.5</i>)&nbsp;:&nbsp;</span></span></font></font></font></p>
+exemple&nbsp;:&nbsp;3.5</i>)&nbsp;:&nbsp;</span></font></font></font></p>
 <ul>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>1</b>&nbsp;:
@@ -88,30 +87,30 @@ exemple&nbsp;:&nbsp;3.5</i>)&nbsp;:&nbsp;</span></span></font></font></font></p>
 <span style="display: inline-block; border: none; padding: 0in"><font face="Times, serif"><font size="3" style="font-size: 12pt"><font color="#000000">Vous
 verrez aussi des fichiers&nbsp;nommés «&nbsp;<i>File Transvox</i>&nbsp;»
 précédents&nbsp;chaque nouvelle série d’audio. Leur notation est
-différente. Elle est&nbsp;notée&nbsp;de 1&nbsp;à&nbsp;5&nbsp;:&nbsp;</span></span></font></font></font></p>
+différente. Elle est&nbsp;notée&nbsp;de 1&nbsp;à&nbsp;5&nbsp;:&nbsp;</span></font></font></font></p>
 <ul>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>1</b>&nbsp;:
-	l’intelligibilité de la personne qui parle est&nbsp;<b>mauvaise</b>&nbsp;;&nbsp;</span></p>
+	l’intelligibilité de la personne qui parle est&nbsp;<b>mauvaise</b>&nbsp;;&nbsp;</p>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>2</b>&nbsp;:
-	l’intelligibilité de la personne qui parle est&nbsp;<b>médiocre</b>&nbsp;;&nbsp;&nbsp;</span></p>
+	l’intelligibilité de la personne qui parle est&nbsp;<b>médiocre</b>&nbsp;;&nbsp;&nbsp;</p>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>3</b>&nbsp;:
-	l’intelligibilité de la personne qui parle est&nbsp;<b>correcte</b>&nbsp;;&nbsp;&nbsp;</span></p>
+	l’intelligibilité de la personne qui parle est&nbsp;<b>correcte</b>&nbsp;;&nbsp;&nbsp;</p>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>4</b>&nbsp;:
-	l’intelligibilité de la personne qui parle est&nbsp;<b>bonne</b>&nbsp;;&nbsp;</span></p>
+	l’intelligibilité de la personne qui parle est&nbsp;<b>bonne</b>&nbsp;;&nbsp;</p>
     <li/>
     <p style="margin-bottom: 0in; line-height: 115%"><b>5</b>&nbsp;:
-	l’intelligibilité de la personne qui parle est&nbsp;<b>excellente</b>.&nbsp;</span></p>
+	l’intelligibilité de la personne qui parle est&nbsp;<b>excellente</b>.&nbsp;</p>
 </ul>
 <p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 115%">
 <span style="display: inline-block; border: none; padding: 0in"><font face="Times, serif"><font size="3" style="font-size: 12pt"><font color="#000000"><font color="#ff0000"><u><b>N’oubliez
 pas de sauvegarder en cliquant sur le bouton «&nbsp;</b></u></font><font color="#ff0000"><i><u><b>save</b></u></i></font><font color="#ff0000"><u><b>&nbsp;»</b></u></font>&nbsp;que
 vous pouvez trouver en haut de la page web ou en bas de la page
 web.&nbsp;Les consignes sont téléchargeables&nbsp;<u><b><a href="Consigne.pdf" download="Consigne">ici</a></b></u>&nbsp;pour
-les consulter si besoin au cours de la passation.&nbsp;&nbsp;</span></span></font></font></font></p>
+les consulter si besoin au cours de la passation.&nbsp;&nbsp;</span></font></font></font></p>
 <p style="text-indent: 0.25in; margin-bottom: 0in; line-height: 115%">
     <i>La durée de passation prend plusieurs heures. Vous avez la
         possibilité de diviser le travail (<u>par exemple&nbsp;</u>: vous
@@ -126,7 +125,7 @@ vous offrirons une clé USB 3.0 de 16Go.&nbsp;N’hésitez pas à
 nous contacter par
 mail&nbsp;<font color="#0563c1"><u>ilef.trabelsi@outlook.com</u></font>&nbsp;ou&nbsp;<font color="#0563c1"><u>choffe.damien@gmail.com</u></font>&nbsp;si
 vous&nbsp;souhaitez avoir un retour de votre participation et/ou pour
-recevoir la clé USB.&nbsp;&nbsp;</span></span></font></font></font></p>
+recevoir la clé USB.&nbsp;&nbsp;</span></font></font></font></p>
 <p style="text-indent: 0.25in; margin-bottom: 0in; line-height: 115%">
     <br/>
 
