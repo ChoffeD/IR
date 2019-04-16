@@ -12,18 +12,23 @@ if (isset($_POST['valide'])) {
      $list = array();
      $i = 0;
     foreach($_POST as $key=>$data){
-        preg_match('/File([0-9])_([0-9]_[0-9])_(-?[0-9])_wav/', $key, $keyword);
-        if(sizeof($keyword)>=3) {
-            $file = $keyword[1];
-            $factor = $keyword[2];
-            $factor = preg_replace('/_/', '.', $factor);
-            $pitch  = $keyword[3];
-            $note = $data;
-            $list[$i] = array($file,$factor, $pitch, $note);
-            $i++;
+        if($data != '0' ) {
+            preg_match('/^(File[0-9][0-9]?)$/', $key, $out);
+            if(sizeof($out)>0) {
+                fputcsv($handle2, array($key, $data), ';');
+            }
+            preg_match('/File([0-9])_([0-9]_[0-9])_(-?[0-9])_wav/', $key, $keyword);
+            if (sizeof($keyword) >= 3) {
+                $file = $keyword[1];
+                $factor = $keyword[2];
+                $factor = preg_replace('/_/', '.', $factor);
+                $pitch = $keyword[3];
+                $note = $data;
+                $list[$i] = array($file, $factor, $pitch, $note);
+                $i++;
+            }
         }
     }
-    var_dump($list);
     foreach($list as $fields) {
         fputcsv($handle, $fields, ';');
     }

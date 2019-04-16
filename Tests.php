@@ -49,57 +49,57 @@ background-repeat: repeat;
 if($ligne== 1 ){
  ?>
 
-    <tr> 	
+    <tr>
 		<td> <h3> File Transvox </h3>  </td>
-		<td> 	<audio controls="controls">
-					<source src="<?php echo $file?>" type="audio/wav" />
-				</audio> 
-	   </td>
-	   <td> <input type="double" name ="<?php echo $file?>" value="0.00"  size ="4">
-	    </td>
-	
+
+
    </tr>
-  
-   
+
+
   <?php } $ligne++;  if ($ligne == 2 ){ ?>
-  
-   <tr> 
-		
+
+   <tr>
+
 		<td> <audio controls="controls">
 					<source src="<?php echo $key?>" type="audio/wav" />
-				</audio>  
-	  </td>   
-		<td> 	
+				</audio>
+	  </td>
+		<td>
 	   </td>
-	   <td> <input type="double" name ="<?php echo $key?>" value="0.00"  size ="4"> </td>
-	
+	   <td> <input type="double" name ="<?php
+           preg_match('/(File[0-9][0-9]?)/', $key, $output_array);
+           echo $output_array[0]?>" value="0"  size ="4", pattern="([0-4](.[0-5])?)|5"> </td>
+
    </tr>
    <tr> <td> <h3> Files : <?php echo $indice; ?></h3> </td>
    <td>  </td>
    </tr>
-  
+
    <?php }  $ligne++;  if ($ligne == 3 ) {
      $files = new DirectoryIterator($paths[$indice]);//repertoire du fichier à changer
-           foreach($files as $son){ 
+           foreach($files as $son){
 		   	if($son->getFilename() != "." && $son->getFilename() != "..")
 			     { $path=$paths[$indice];
-				  $name= $path."/".$son->getFilename(); 
+				  $name= $path."/".$son->getFilename();
 				   ?>
-				 
-				 <tr> 
+
+				 <tr>
 				  <td>   <audio controls="controls">
 					<source src="<?php echo $name ;?>" type="audio/wav" />
 				    </audio>	    </td>
-					<td></td>
+                     <td> 	<audio controls="controls">
+                             <source src="<?php echo $file?>" type="audio/wav" />
+                         </audio>
+                     </td>
                      <?php ?>
-				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4"> </td>
+				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4", pattern="([0-4](.[0-5])?)|5"> </td>
 				 </tr>
-   
-  
 
-   
-   
-   
+
+
+
+
+
    <?php } } } $ligne = 1 ;$indice++;  } ?>
 </table>
 
