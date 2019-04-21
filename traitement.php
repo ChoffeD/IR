@@ -35,8 +35,9 @@ recevoir la clé USB.&nbsp;&nbsp;</span></span></font></font></font></p>
 // on teste la déclaration de nos variables
 if (isset($_POST['valide'])) {
     // on affiche nos résultats
-    $handle = fopen("data.csv", "a");
-    $handle2 = fopen("Metadata.csv", "a");
+    $ip = getUserIpAddr();
+    $handle = fopen("IR/Data/data".$ip.".csv", "a");
+    $handle2 = fopen("IR/Data/Metadata".$ip.".csv", "a");
     $list = array();
     $i = 0;
     foreach($_POST as $key=>$data){
@@ -63,13 +64,30 @@ if (isset($_POST['valide'])) {
     }
     $test = array("FIN");
     fputcsv($handle, $test, ';');
+    fputcsv($handle2, $test, ';');
 
 
     fclose($handle);
-    if($file != 'File10')  {
+    fclose($handle2);
+    if($file != '10')  {
         ?> <p><h3>Vous vous êtes arrêtés au fichier <?php echo $file?></h3></p>
         <?php
     }
+}
+
+
+
+function getUserIpAddr(){
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        //ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        //ip pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }else{
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
 }
 ?>
 
