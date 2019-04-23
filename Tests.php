@@ -112,7 +112,7 @@ vous pouvez trouver en haut de la page web ou en bas de la page
 web.&nbsp;Les consignes sont téléchargeables&nbsp;<u><b><a href="Consigne.pdf" download="Consigne">ici</a></b></u>&nbsp;pour
 les consulter si besoin au cours de la passation.&nbsp;&nbsp;</span></font></font></font></p>
 <p style="text-indent: 0.25in; margin-bottom: 0in; line-height: 115%">
-    <i>La durée de passation prend plusieurs heures. Vous avez la
+    <i>La durée de passation prend environ 2 heures. Vous avez la
         possibilité de diviser le travail (<u>par exemple&nbsp;</u>: vous
         écouter les audios jusqu’au&nbsp;«&nbsp;files&nbsp;: 4&nbsp;»&nbsp;et
         vous sauvegardez. Les résultats nous seront envoyés. Vous pourrez
