@@ -179,7 +179,7 @@ if($ligne== 1 ){
 	   </td>
 	   <td> <input type="double" name ="<?php
            preg_match('/(File[0-9][0-9]?)/', $key, $output_array);
-           echo $output_array[0]?>" value="0"  size ="4", pattern="^([1-4](\.[0-5])?)|5$"> </td>
+           echo $output_array[0]?>" value="0"  size ="4", pattern="^([1-4](\.[0-5])?)|5|0$"> </td>
 
    </tr>
    <tr> <td> <h3> Files : <?php echo $indice; ?></h3> </td>
@@ -205,7 +205,7 @@ if($ligne== 1 ){
                              <source src="<?php echo $file?>" type="audio/wav" />
                          </audio>
                      <?php }?></td>
-				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4", pattern="^([1-4](\.[0-5])?)|5$"> </td>
+				    <td> <input type="double" name ="<?php echo $son->getFilename()?>" value="0" size ="4", pattern="^([1-4](\.[0-5])?)|5|0$"> </td>
 				 </tr>
 
 
